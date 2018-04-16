@@ -1,0 +1,27 @@
+<h1>個人資料</h1>
+{% for r in introductions %}
+<h2>{{r.name}}</h2>
+<h2>{{r.gender}}</h2>
+<h2>{{r.birthday}}</h2>
+<!--{% if r.food_set.all %}
+<p>本餐廳共有{{r.food_set_all|length }}道菜</p>
+<table class="table">
+	<tr>
+		<th>菜名</th>
+		<th>價格</th>
+		<th>辣不辣</th>
+		<th>註解</th>
+	</tr>
+	{% for food in r.food_set.all %}
+	<tr>
+		<td>{{food.name}}</td>
+		<td>{{food.price}}</td>
+		<td>{% if food.is_spicy %}辣{% else %}不辣{% endif %}</td>
+		<td>{{food.comment}}</td>
+	</tr>
+	{% endfor %}
+</table>
+	{% else %}
+	<p>本餐廳不賣,笑死</p>
+	{% endif %}
+	{% endfor %}-->
