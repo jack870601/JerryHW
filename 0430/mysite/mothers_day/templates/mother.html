@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>媽媽日</title>
+</head>
+<body>
+	<h1>媽媽的日子啦要說什麼快點跟他說</h1>
+	<form action="" method="post">
+		{% csrf_token %}
+		<textarea name="content"></textarea>
+		<input type="submit" value="submit">
+	</form><hr>
+	<h4>Content:</h4><br>
+	{{ content }}
+</body>
+</html>
