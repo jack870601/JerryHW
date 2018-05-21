@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+<script>
+	
+function check(){
+
+var x = document.getElementById( 'input' ).value;
+
+
+if ( x < 60 ){
+	document.getElementById( 'answer' ).value='沒有60分ㄉ可以去二退了喔'
+}else{
+	document.getElementById( 'answer' ).value='冰友 有60分 很棒捏'
+
+}
+}
+
+</script>
+
+輸入成績：<input type="text" id ="input">
+<input type="button" id ="check" value = "點我點我" onclick="check()"><br>
+結果：<input type="text" id ="answer" readonly>
+</body>
+</html>

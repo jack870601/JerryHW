@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+
+
+<SCRIPT> 
+function clean(){ 
+document.getElementById( 'number1' ).value = ""
+document.getElementById( 'number2' ).value = ""
+document.getElementById( 'answer' ).value = ""
+
+} 
+
+function add(){
+
+var x = parseInt(document.getElementById( 'number1' ).value)
+var y = parseInt(document.getElementById( 'number2' ).value)
+document.getElementById( 'answer' ).value = x + y 
+
+}
+
+function sub(){
+var x = document.getElementById( 'number1' ).value
+var y = document.getElementById( 'number2' ).value
+document.getElementById( 'answer' ).value= x - y 
+
+}
+function mul(){
+var x = document.getElementById( 'number1' ).value
+var y = document.getElementById( 'number2' ).value
+document.getElementById( 'answer' ).value= x * y 
+
+}
+function div(){
+var x = document.getElementById( 'number1' ).value
+var y = document.getElementById( 'number2' ).value
+document.getElementById( 'answer' ).value= x / y 
+
+}
+
+
+</SCRIPT> 
+
+
+number1：<input type='number' name='number1' id='number1' style="text-align:center" /><br>
+number2：<input type='number' name='number2' id='number2' style="text-align:center" /><br>
+<input type='button' name='submit' value='clean' onclick="clean();" />
+<input type='button' name='submit' value='add' onclick="add()" />
+<input type='button' name='submit' value='sub' onclick="sub()" />
+<input type='button' name='submit' value='mul' onclick="mul()" />
+<input type='button' name='submit' value='div' onclick="div()" />
+<br>
+The answer is：<input type='text' name='answer' id='answer' readonly>
+
+
+
+</body>
+</html>
